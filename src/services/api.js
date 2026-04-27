@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:4000/api";
+const BASE_URL = "https://backend-playa-canaveral-1.onrender.com";
 
 const authH  = () => ({ "Content-Type":"application/json", Authorization:`Bearer ${localStorage.getItem("user_token")}` });
 const adminH = () => ({ "Content-Type":"application/json", Authorization:`Bearer ${localStorage.getItem("admin_token")}` });
