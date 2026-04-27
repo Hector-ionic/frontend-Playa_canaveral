@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Transición suave entre temas ── */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+/* ── Colores base modo claro ── */
+:root {
+  color-scheme: light;
+}
+
+/* ── Colores base modo oscuro ── */
+html.dark {
+  color-scheme: dark;
+}
+
+/* ── Scrollbar dark mode ── */
+html.dark {
+  scrollbar-color: #374151 #111827;
+}
+
+/* ── Estilos globales dark para elementos que Tailwind no cubre ── */
+html.dark body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* ── Leaflet dark mode ── */
+html.dark .leaflet-tile {
+  filter: invert(1) hue-rotate(180deg) brightness(0.85);
+}
