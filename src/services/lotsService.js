@@ -1,6 +1,6 @@
 import lotesLocales from "../data/lotes.json";
 
-const BASE_URL = "http://localhost:4000/api";
+const BASE_URL = "https://backend-playa-canaveral-1.onrender.com";
 
 export const getLotes = async () => {
   try {
